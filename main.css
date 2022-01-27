@@ -1,0 +1,641 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', medium;
+    color: black;
+    font-size: 14px;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1000px;
+    /*позиционирование по центру*/
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 609px;
+    background: url('img/imgBack1.jpg') no-repeat center top / cover;
+}
+
+header a {
+    color: white;
+    font-size: 14px;
+}
+
+
+
+hr.hr1 {
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+}
+
+.menu {
+    display: flex;
+    margin-left: 270px;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+
+.menu li a,
+.tel {
+    text-decoration: none;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.tel {
+    margin-left: auto;
+    margin-top: -15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav2 {
+    margin-top: 90px;
+    width: 500px;
+}
+
+
+.headText1 {
+    font-size: 45px;
+    font-family: 'Playfair Display', bold;
+    color: white;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 2.5s ease 0s;
+}
+
+.headText1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+.headText2 {
+    width: 350px;
+    font-family: 'Montserrat', regular;
+    font-size: 17px;
+    line-height: 30px;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.nav3 {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    height: auto;
+    font-size: 13px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin-right: 30px;
+    padding: 20px 50px;
+    background-color: #FFD76F;
+    border-radius: 39px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+    background-color: #f5c43d;
+
+}
+
+#button {
+    height: auto;
+    font-size: 13px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 5px 70px;
+    background-color: #456c9efa;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.5s ease 0s;
+}
+
+#button:hover {
+    background-color: #283b55e0;
+}
+
+.headText3 {
+    width: 105px;
+    height: auto;
+    color: white;
+    margin-left: 10px;
+}
+
+.tourText1 {
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 85px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+hr.hr2 {
+    margin-top: -10px;
+    background-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+}
+
+.heading {
+    margin-top: 50px;
+}
+
+.heading a {
+    font-size: 25px;
+    color: rgba(11, 41, 86, 0.979273);
+    text-decoration: none;
+}
+
+.tourFlexBox {
+    display: flex;
+}
+
+.tours {
+    display: flex;
+    margin-top: 5px;
+    width: 600px;
+    height: 250px;
+    background: #FFFFFF;
+    border: 1px solid rgba(11, 41, 86, 0.979273);
+    margin-bottom: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+.tours:hover {
+    -webkit-box-shadow: 7px 11px 9px 2px rgba(34, 60, 80, 0.27);
+    -moz-box-shadow: 7px 11px 9px 2px rgba(34, 60, 80, 0.27);
+    box-shadow: 7px 11px 9px 2px rgba(34, 60, 80, 0.27);
+}
+
+.tour img {
+    width: 350px;
+    height: 251px;
+    padding-top: 0px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoBlock {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.infoHeading {
+    font-size: 15px;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-bottom: 15px;
+
+}
+
+.flexRow {
+    display: flex;
+    align-items: center;
+}
+
+.application {
+    margin-top: 70px;
+    width: 100%;
+    height: 350px;
+    background: url('img/imgForm.jpg') no-repeat center top / cover;
+}
+
+.appText1 {
+    width: 230px;
+    height: auto;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 80px;
+    padding-left: 400px;
+    text-align: center;
+}
+
+.appText2 {
+    width: 230px;
+    height: auto;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-left: 400px;
+    text-align: center;
+}
+
+.appBtn1 {
+    height: auto;
+    width: 160px;
+    font-size: 13px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 85px;
+    margin-left: 80px;
+    border: 1px solid #77BDF2;
+    border-radius: 39px;
+    transition: box-shadow 0.5s ease 0s;
+
+}
+
+.appBtn2 {
+    height: auto;
+    width: 160px;
+    font-size: 13px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+    border: 1px solid #77BDF2;
+    border-radius: 39px;
+    transition: box-shadow 0.5s ease 0s;
+
+}
+
+.appBtn1:focus,
+.appBtn2:focus {
+    outline: none;
+    box-shadow: 0 0 15px #96ccf5;
+
+}
+
+.btnMain {
+    height: auto;
+    width: auto;
+    font-size: 13px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 50px;
+    margin-left: 80px;
+    border: 1px solid #0B2956;
+    border-radius: 39px;
+    background-color: #faf9f500;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.btnMain:hover {
+    background-color: #FFD76F;
+    border-color: #FFD76F;
+
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background: url('img/footer.jpg') no-repeat center top / cover;
+}
+
+.footFlexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footText1 {
+    padding-top: 50px;
+    padding-left: 475px;
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 17px;
+}
+
+hr.hr3 {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.479);
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgba(255, 255, 255, 0.479);
+    margin-bottom: 40px;
+}
+
+.footText2 {
+    color: rgba(255, 255, 255, 0.76);
+    margin-left: 350px;
+    margin-bottom: 15px;
+}
+
+.footFlexRow {
+    margin-left: 365px;
+    margin-bottom: 15px;
+
+}
+
+.footFlexRow img {
+    margin-right: 15px;
+}
+
+.footer .flexRow a {
+    text-decoration: none;
+    color: white;
+}
+
+.sortBar {
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 100%;
+    height: 600px;
+    position: sticky;
+    top: 0;
+}
+
+.largeText {
+    font-size: 25px;
+    color: rgba(11, 41, 86, 0.979273);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-left: 3px;
+    margin-right: 15px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+hr.hr4 {
+    margin-top: 25px;
+    background-color: rgba(190, 189, 189, 0.308);
+    color: rgba(190, 189, 189, 0.308);
+    border: none;
+    height: 1px;
+    margin-bottom: 25px;
+}
+
+.lastText {
+    font-size: 20px;
+    color: rgba(11, 41, 86, 0.979273);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+.changePrice {
+    color: rgb(235, 62, 31);
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 800px;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 190px;
+        letter-spacing: 0.01em;
+        line-height: 20px;
+    }
+
+    .menu li a,
+    .tel {
+        text-decoration: none;
+    }
+
+    .menu li {
+        margin-right: 25px;
+    }
+
+    .tel {
+        margin-left: 140px;
+    }
+
+    .sortBar {
+        margin-left: 50px;
+    }
+
+    .appText1 {
+        padding-left: 250px;
+    }
+
+    .appText2 {
+        padding-left: 250px;
+    }
+
+    section label {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+
+    .header a {
+        font-size: 11px;
+    }
+
+    .headText1 {
+        font-size: 28px;
+        width: 250px;
+        line-height: 40px;
+    }
+
+    .headText2 {
+        width: 300px;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+
+    .nav2 {
+        margin-top: 20px;
+        width: 450px;
+    }
+
+    .nav {
+        padding-top: 15px;
+    }
+
+    .header {
+        height: 400px;
+    }
+
+    .btn {
+        padding: 15px 35px;
+        font-size: 12px;
+    }
+
+    .infoBlock {
+        font-size: 13px;
+        margin: 3px 9px;
+    }
+
+    .infoHeading {
+        font-size: 12px;
+        margin-left: 9px;
+        margin-right: 9px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .changePrice {
+        font-size: 14px;
+    }
+
+    .date {
+        font-size: 11px;
+        margin-left: 9px;
+        margin-right: 9px;
+        margin-bottom: 5px;
+    }
+
+    .tours {
+        width: 450px;
+        height: 190px;
+        background: #FFFFFF;
+        border: 1px solid rgba(11, 41, 86, 0.979273);
+        margin-bottom: 20px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .tour img {
+        width: 220px;
+        height: 190px;
+        padding-top: 0px;
+    }
+
+    section label {
+        margin-right: 30px;
+    }
+
+    .tourFlexBox {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .largeText {
+        margin: 15px 0px;
+    }
+
+    hr.hr4 {
+        margin: 10px 0px;
+    }
+
+    .sortBar {
+        margin-left: 20px;
+        margin-top: 10px;
+        height: 320px;
+        position: relative;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 50px;
+        letter-spacing: 0.01em;
+        line-height: 20px;
+    }
+
+    .menu li a,
+    .tel {
+        text-decoration: none;
+    }
+
+    .menu li {
+        margin-right: 10px;
+        height: auto;
+    }
+
+    .tel {
+        margin-left: 40px;
+    }
+
+    .appText1 {
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+
+    .appText2 {
+        padding-left: 0px;
+    }
+
+    .application {
+        margin-top: 30px;
+        height: 290px;
+    }
+
+    .appBtn1 {
+        padding: 15px 20px;
+        margin-top: 40px;
+    }
+
+    .btnMain {
+        margin-top: 30px;
+        padding: 15px 20px;
+
+    }
+
+    .appBtn1,
+    .appBtn2,
+    .btnMain {
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,284 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', medium;
+    color: black;
+    font-size: 14px;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1000px;
+    /*позиционирование по центру*/
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: url('../img/imgBack3.jpg') no-repeat center top / cover;
+    margin-bottom: 40px;
+}
+
+header a {
+    color: white;
+}
+
+hr.hr1 {
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+}
+
+.menu {
+    display: flex;
+    margin-left: 270px;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+
+.menu li a,
+.tel {
+    text-decoration: none;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.tel {
+    margin-left: auto;
+    margin-top: -15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.headText1 {
+    margin-top: 200px;
+    margin-left: 280px;
+    width: auto;
+    font-size: 50px;
+    font-family: 'Playfair Display', bold;
+    color: white;
+}
+
+.line {
+    border: none;
+    text-align: center;
+    position: relative;
+}
+
+.line span {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    padding: 0px 25px;
+    height: 1px;
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+
+.line:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #4e4c4c;
+    border: none;
+    position: absolute;
+    margin-top: -15px;
+    z-index: 0;
+}
+
+.contactsflexRow {
+
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.item {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+hr.hr2 {
+    background-color: rgba(68, 66, 66, 0.747);
+    height: 1px;
+    border: none;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+.map {
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
+
+.flexColumn.firstAnimate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 1.5s ease 0.5s;
+}
+
+.flexColumn.secondAnimate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 1.5s ease 1s;
+}
+
+.flexColumn.thirdAnimate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+
+    transform: translate(0px, 20%);
+    opacity: 0;
+    transition: all 1.5s ease 1.5s;
+}
+
+.flexColumn.firstAnimate._active,
+.flexColumn.secondAnimate._active,
+.flexColumn.thirdAnimate._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 800px;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 190px;
+        letter-spacing: 0.01em;
+        line-height: 20px;
+    }
+
+    .menu li a,
+    .tel {
+        text-decoration: none;
+    }
+
+    .menu li {
+        margin-right: 25px;
+    }
+
+    .tel {
+        margin-left: 140px;
+    }
+
+    .headText1 {
+        margin-left: 220px;
+        font-size: 40px;
+    }
+
+    .map {
+        margin-left: 115px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+
+    .container {
+        width: 450px;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 50px;
+        letter-spacing: 0.01em;
+        line-height: 20px;
+    }
+
+    .menu li a,
+    .tel {
+        text-decoration: none;
+    }
+
+    .menu li {
+        margin-right: 10px;
+        height: auto;
+    }
+
+    .tel {
+        margin-left: 40px;
+    }
+
+    .headText1 {
+        margin-left: 80px;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .map {
+        margin-left: 115px;
+    }
+
+    .header {
+        height: 400px;
+    }
+
+    .contactsflexRow {
+        margin-left: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexColumn.firstAnimate,
+    .flexColumn.secondAnimate,
+    .flexColumn.thirdAnimate {
+        margin-right: 0px;
+    }
+
+
+    .map {
+        margin-left: 0px;
+        margin-bottom: 40px;
+        width: 450px;
+        height: auto;
+    }
+}

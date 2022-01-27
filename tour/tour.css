@@ -1,0 +1,303 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', medium;
+    color: black;
+    font-size: 14px;
+}
+
+.container {
+    width: 1150px;
+    /*позиционирование по центру*/
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    margin-left: 340px;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background: url('../img/imgBack3.jpg') no-repeat center top / cover;
+}
+
+.heading {
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgba(11, 41, 86, 0.979273);
+}
+
+.flexRow {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+hr.hr2 {
+    background-color: black;
+    border: none;
+    height: 1px;
+}
+
+.infoHeading {
+    font-size: 20px;
+    color: rgba(11, 41, 86, 0.979273);
+
+}
+
+.infoBlock {
+    font-size: 20px;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.date {
+    font-family: Montserrat Alternates;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    margin-left: 30px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.flexRowImg img {
+    width: 230px;
+    height: 190px;
+    margin-right: 0;
+}
+
+.day {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: rgba(15, 57, 121, 0.979);
+
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+span {
+    font-weight: 500;
+}
+
+.form {
+    width: 550px;
+    margin-left: 350px;
+}
+
+
+.form__item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 30px;
+    text-align: left;
+    font-family: Cairo;
+    font-style: medium;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+
+.form__input {
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: auto;
+    padding: 5px 5px;
+    border-width: 1px;
+    transition: box-shadow 0.5s ease 0s;
+}
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #aba5e6;
+}
+
+
+.form_select {
+    display: block;
+    width: 240px;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: auto;
+    padding: 5px 5px;
+}
+
+.form__button {
+    margin-top: 20px;
+    margin-left: 130px;
+    width: 250px;
+    height: 50px;
+    background-color: #7267E8;
+    color: white;
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s;
+}
+
+.form__button:hover {
+    background-color: #524ba3;
+}
+
+.flexRowImg {
+    display: flex;
+}
+
+.flexColumnImg {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexColumnText1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.flexColumnText2 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 100px;
+}
+
+.flexRowMain,
+.flexRowText {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 800px;
+    }
+
+    .infoBlock {
+        font-size: 18px;
+    }
+
+    .flexColumn {
+        width: 400px;
+    }
+
+    .heading {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .flexRowImg img {
+        width: 180px;
+        height: 140px;
+        margin-right: 0;
+    }
+
+    .infoHeading {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .flexRowImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexColumnImg {
+        flex-direction: row;
+    }
+
+    section label {
+        margin-right: 100px;
+    }
+
+    .form {
+        width: 550px;
+        margin-left: 180px;
+    }
+
+    label {
+        text-align: left;
+        letter-spacing: 0.01em;
+        font-size: 18px;
+    }
+
+    .form__item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .flexRowMain,
+    .flexRowText {
+        flex-direction: column;
+    }
+
+    .flexColumnImg {
+        margin-left: 60px;
+    }
+
+    .flexColumnText2 {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .flexColumnText1 {
+        width: 400px;
+        margin-left: 20px;
+
+    }
+
+    .form {
+        width: 450px;
+        margin-left: 0px;
+    }
+
+    .form__item {
+        flex-direction: column;
+
+        margin-bottom: 15px;
+    }
+
+    .form_select,
+    .form__input {
+        margin-left: 5px;
+    }
+
+    .form__input {
+        width: 240px;
+    }
+}
